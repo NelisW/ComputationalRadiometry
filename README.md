@@ -3,7 +3,7 @@ The notebooks in this series broadly cover the functionality provided by the pyr
 Completed or partially completed notebooks are  provided links to an HTML rendering of the notebook. Topics without hyperlinks are still under construction.
 
 
-1) [IPython hints and tips]("http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/1)IPythonHintsAndTips.ipynb?create=1"). 
+1) [IPython hints and tips](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/01%20IPythonHintsAndTips.ipynb?create=1). 
 A brief summary of how to start up and use the IPython notebook.
 
 2) Python whirlwind cheat sheet.

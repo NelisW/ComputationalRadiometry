@@ -1,10 +1,13 @@
-## The pyradi Computational Optical Radiometry Library  
+## Computational Optical Radiometry with pyradi   
 
-The notebooks in this series cover the functionality provided by the [pyradi](https://code.google.com/p/pyradi/) Python library on [Google Code](https://code.google.com/p/pyradi/source/browse/#svn%2Ftrunk%253Fstate%253Dclosed). The pyradi package is also available on [PyPI](https://pypi.python.org/pypi/pyradi/):  "pip install --upgrade pyradi". 
-The links below point to HTML renderings of the notebooks. 
-The notebooks are available [on Github](https://github.com/NelisW/ComputationalRadiometry). The notebooks are constantly revised.
- 
-These notebooks are not intended to be a complete manual, please consult the [references](https://code.google.com/p/pyradi/#Documentation) for more information. 
+The [pyradi](https://code.google.com/p/pyradi/) toolkit is a Python toolkit to perform optical and infrared radiometry (flux flow) calculations.
+The toolkit is an extendable, integrated and coherent collection of basic functions, code modules, documentation, example templates, unit tests and resources, that can be applied towards diverse calculations in the electro-optics domain. 
+
+The notebooks in this series cover the functionality provided by the [pyradi](https://code.google.com/p/pyradi/) Python library on [Google Code](https://code.google.com/p/pyradi/source/browse/#svn%2Ftrunk%253Fstate%253Dclosed).  
+The pyradi package is also available on [PyPI](https://pypi.python.org/pypi/pyradi/):  `pip install --upgrade pyradi`.
+
+The links below point to HTML renderings of the notebooks, available on [Github](https://github.com/NelisW/ComputationalRadiometry). These notebooks are constantly revised.
+This series of  notebooks is not intended to be a complete manual, please consult the [references](https://code.google.com/p/pyradi/#Documentation) for more information. 
 Section references in the notebooks indicated as (Sec 5.1) refer to sections in the [book](http://spie.org/x648.html?product_id=2021423&origin_id=x646).
 
 

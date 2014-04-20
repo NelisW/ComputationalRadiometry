@@ -6,10 +6,13 @@ The toolkit is an extendable, integrated and coherent collection of basic functi
 The notebooks in this series cover the functionality provided by the [pyradi](https://code.google.com/p/pyradi/) Python library on [Google Code](https://code.google.com/p/pyradi/source/browse/#svn%2Ftrunk%253Fstate%253Dclosed).  
 The pyradi package is also available on [PyPI](https://pypi.python.org/pypi/pyradi/):  `pip install --upgrade pyradi`.
 
-The links below point to HTML renderings of the notebooks, available on [Github](https://github.com/NelisW/ComputationalRadiometry). These notebooks are constantly revised.
+The notebooks can be downloaded from [Github](https://github.com/NelisW/ComputationalRadiometry)
+These notebooks are constantly revised and updated, revisit from time to time.
+
 This series of  notebooks is not intended to be a complete manual, please consult the [references](https://code.google.com/p/pyradi/#Documentation) for more information. 
 Section references in the notebooks indicated as (Sec 5.1) refer to sections in the [book](http://spie.org/x648.html?product_id=2021423&origin_id=x646).
 
+The links below point to HTML renderings of the notebooks, courtesy of [Rackspace](http://nbviewer.ipython.org/) . Please have patience, rendering the notebooks may take some time (downloading files, processing the data, and rendering the HTML).
 
 01) [IPython hints and tips](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/01-IPythonHintsAndTips.ipynb?create=1).  
 This notebook provides a brief summary of how to start up and use the IPython notebook.
@@ -28,7 +31,7 @@ This notebook provides a description of the basics of radiometric spectral varia
 It then moves on to how to calculate spectral integrals, calculate spectral effective values, spectral convolution, colour coordinate calculations, and spatial integrals.
 
 05) Plotting with pyradi.  Demonstrating the variety of plots available with ryplot.    
-05a) [Plotting With Pyradi - General Introduction and Cartesian Plots](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/05-PlottingWithPyradi-GeneralAndCartesian.ipynb?create=1)  
+05a) [Plotting With Pyradi - General Introduction and Cartesian Plots](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/05a-PlottingWithPyradi-GeneralAndCartesian.ipynb?create=1  
 The pyradi library has a module, [`pyradi.ryplot`](http://pyradi.googlecode.com/svn//trunk/pyradi/doc/_build/html/ryplot.html),
 to simplify plotting. The module is a productivity wrapper around [Matplotlib](http://matplotlib.org/), all that can can be done `pyradi.ryplot` can be done with raw Matplotlib.  The productivity gained with this module stems from the fact that plots and plot properties are all combined into a single function call. So, with just one call a complete graph can be drawn. The code is compact and there is no need to hunt through many pages of documentation to find the appropriate command for some graph attribute. You would have to consult the ryplot documentation for information on the functions long list of parameters.
 This notebook covers a general introduction to plotting and creating cartesian (x,y) plots. Other plot types are covered in the next notebook in the series.  

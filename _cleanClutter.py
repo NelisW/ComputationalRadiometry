@@ -48,9 +48,9 @@ def QueryDelete(recurse,dir,patn):
 #we take the conservative approach and do not do blanket erase,
 #rather do it by type, asking the user first
 QueryDelete(0,'.', '*.eps;*.png;*.jpg;*.pdf;*.txt;*.tiff;*.dat;*.lut;*.fl7;flamesensordata.*')
-QueryDelete(0,'.', 'tape7-*.txt;tape7-*;arr*.txt;Traje*.txt;trian*.txt;vertex*.txt')
-QueryDelete(0,'.', 'arrfile*.*;colourcoordinates.*;tar;tropical-23krural-45deg-space.*' )
-QueryDelete(0,'.', 'modtrandata.tar;modtrandata.tgz;tape7VISNIR5kmTrop23Vis;arrayplot*.*' )
+QueryDelete(0,'.', 'tape7-*.txt;tape7-*;arr*.txt;Traje*.txt;trian*.txt;vertex*.txt;Intensity-max.*')
+QueryDelete(0,'.', 'arrfile*.*;colourcoordinates.*;tar;tropical-23krural-45deg-space.*;testwith.svg' )
+QueryDelete(0,'.', 'modtrandata.tar;modtrandata.tgz;tape7VISNIR5kmTrop23Vis;arrayplot*.*;savegraph.svg' )
 
 
 

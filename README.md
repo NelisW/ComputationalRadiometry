@@ -43,8 +43,6 @@ This notebook covers extends on 05a) and describes polar plots, three-dimensiona
 05d) Mayavi   
 
 06) [Diverse pyradi utilities](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/06-Diverse-pyradi-utilities.ipynb?create=1).  
-Working with files and directories, absolute atmospheric humidity, solving the range equation, probability of pulse detection and false alarm rate, downloading compressed files from the internet, latex utilities, and reading lookup tables from files.
-
 Demonstrate the pulse detection algorithms (ryutils). Demonstrate the range equation solver (ryutils). Absolute humidity function (ryutils).  
 List files in directory tree using a pattern: listFiles (ryfiles). Write LateX code for eps figure: epsLaTexFigure (ryfiles). Write a numpy array to LaTeX: arrayToLaTex (ryfiles). Load a two-dimensional lookup table: read2DLookupTable (ryfiles).
  

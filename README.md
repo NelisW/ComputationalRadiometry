@@ -1,6 +1,6 @@
 ### Computational Optical Radiometry with pyradi   
 
-![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.9910.png)
+[![http://dx.doi.org/10.5281/zenodo.9910 ](https://zenodo.org/badge/doi/10.5281/zenodo.9910.png)](http://dx.doi.org/10.5281/zenodo.9910 )
 
 The [pyradi](https://code.google.com/p/pyradi/) toolkit is a Python toolkit to perform optical and infrared radiometry (flux flow) calculations. The toolkit is an extendable, integrated and coherent collection of basic functions, code modules, documentation, example templates, unit tests and resources, that can be applied towards diverse calculations in the electro-optics domain. 
 

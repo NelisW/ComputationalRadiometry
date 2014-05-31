@@ -19,8 +19,9 @@ This notebook provides a brief summary of how to start up and use the IPython no
 02) [Python whirlwind cheat sheet](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/02-PythonWhirlwindCheatSheet.ipynb?create=1).  
 This notebook serves to give brief one-liner examples of key Python usage and idioms. The approach here is not to spend too much time on general Python constructs, but to move on to Numpy as soon as possible. Numpy is a critical base for any scientific calculation, providing powerful vectorised computation. I make no claim to any level of completeness in this document. You still need to read the books and reference manuals to get the big picture and the details. You still have to read the manuals, but this should help you move on to Numpy quickly.
 
-03) Introduction to optical radiometry.  
-The idea is to have a very brief overview of the fundamental theory. For now see the [book](http://spie.org/x648.html?product_id=2021423&origin_id=x646).
+03) 
+[Introduction to optical radiometry](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/03-Introduction-to-Radiometry.ipynb?create=1).  
+A very brief overview of the fundamental theory, from the [book](http://spie.org/x648.html?product_id=2021423&origin_id=x646).
 
 04) [Introduction to computational radiometry with  pyradi](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/04-IntroductionToComputationalRadiometryWithPyradi.ipynb?create=1).  
 This notebook provides a description of the basics of radiometric spectral variables and conversions between spectral densities, generic filter functions, generic detector functions, and reading and plotting spectral data. It then moves on to how to calculate spectral integrals, calculate spectral effective values, spectral convolution, colour coordinate calculations, and spatial integrals.

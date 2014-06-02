@@ -6,7 +6,7 @@ The [pyradi](https://code.google.com/p/pyradi/) toolkit is a Python toolkit to p
 
 The notebooks in this series cover the functionality provided by the [pyradi](https://code.google.com/p/pyradi/) Python library on [Google Code](https://code.google.com/p/pyradi/source/browse/#svn%2Ftrunk%253Fstate%253Dclosed).   The pyradi package is also available on [PyPI](https://pypi.python.org/pypi/pyradi/):  `pip install --upgrade pyradi`.
 
-The notebooks can be downloaded from [Github](https://github.com/NelisW/ComputationalRadiometry). These notebooks are constantly revised and updated, revisit from time to time.
+The notebooks can be downloaded from [Github](https://github.com/NelisW/ComputationalRadiometry#computational-optical-radiometry-with-pyradi). These notebooks are constantly revised and updated, revisit from time to time.
 
 This series of  notebooks is not intended to be a complete manual, please consult the [references](https://code.google.com/p/pyradi/#Documentation) for more information. Section references in the notebooks indicated as (Sec 5.1) refer to sections in the [book](http://spie.org/x648.html?product_id=2021423&origin_id=x646).
 
@@ -53,8 +53,9 @@ The pyradi [`rydetector`](http://pyradi.googlecode.com/svn//trunk/pyradi/doc/_bu
 10) [Image utilities](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/10-ImageUtilities.ipynb?create=1).
 Loading raw  data files and saving raw data to an image.  Performing histogram equalisation on an image. Warping a Siemens Star image from polar to cartesian format. Calculate the three dimensional noise of an image sequence.  
         
-11) Infrared measurement and analysis.    
-Read the header and an image from  a PTW file: readPTWHeader (ryptw).  Converting raw measured PTW data to calibrated radiance or temperature (ryptw).
+11) 
+[Infrared measurement and analysis](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/11-InfraredMeasurementAndAnalysis.ipynb?create=1).  
+This notebook demonstrates the pyradi tools to read and process a FLIR Inc ptw infrared camera file.  First the image header and image data are read and displayed.  Measured calibration data is then used to determine the instrument function, which is finally used to calculate the temperature of a laboratory source.
 
 12) Example simple case studies.  
 

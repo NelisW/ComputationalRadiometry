@@ -52,6 +52,7 @@ QueryDelete(0,'.', 'tape7-*.txt;tape7-*;arr*.txt;Traje*.txt;trian*.txt;vertex*.t
 QueryDelete(0,'.', 'arrfile*.*;colourcoordinates.*;tar;tropical-23krural-45deg-space.*;testwith.svg;*.tex;' )
 QueryDelete(0,'.', 'modtrandata.tar;modtrandata.tgz;tape7VISNIR5kmTrop23Vis;arrayplot*.*;savegraph.svg' )
 QueryDelete(0,'.', 'arrayplotdemo.*;*.tex;img2*.*;sensornoise.*;Colored_Bullseye-wikipedia.*' )
+QueryDelete(0,'.', 'lwir100mm0150us*.*;LWIR-BBre*.*;img2*.*;pyradiSample*.*;lw*.txt;lw*.xml;Unity.txt' )
 
 
 

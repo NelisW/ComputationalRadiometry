@@ -53,6 +53,11 @@ QueryDelete(0,'.', 'arrfile*.*;colourcoordinates.*;tar;tropical-23krural-45deg-s
 QueryDelete(0,'.', 'modtrandata.tar;modtrandata.tgz;tape7VISNIR5kmTrop23Vis;arrayplot*.*;savegraph.svg' )
 QueryDelete(0,'.', 'arrayplotdemo.*;*.tex;img2*.*;sensornoise.*;Colored_Bullseye-wikipedia.*;binfile.bin;' )
 QueryDelete(0,'.', 'lwir100mm0150us*.*;LWIR-BBre*.*;img2*.*;pyradiSample*.*;lw*.txt;lw*.xml;Unity.txt' )
+QueryDelete(1,'.', '*.ps')
+QueryDelete(1,'.', '*.log')
+QueryDelete(1,'.', '*.bbl;comment.cut')
+QueryDelete(1,'.', '*.bbl;*.sav;*.bak;*.synctex;*.log;*.svn')
+QueryDelete(1,'.', '*.blg;*.dfn;*.smb;*.bak;*.aux;*.out;*.lot;*.lof;*.toc;*.tex.bak;*.dvi;*.efc;Backup_of_*.*;*.abr')
 
 
 

@@ -47,17 +47,22 @@ def QueryDelete(recurse,dir,patn):
 
 #we take the conservative approach and do not do blanket erase,
 #rather do it by type, asking the user first
-QueryDelete(0,'.', '*.eps;*.png;*.jpg;*.pdf;*.tiff;*.dat;*.lut;*.fl7;flamesensordata.*;sample.*;siemensstar.*')
+QueryDelete(0,'.', '*.tex')
+QueryDelete(0,'.', '*.pdf')
+QueryDelete(0,'.', '*.png')
+QueryDelete(0,'.', '*.eps;*.jpg;*.tiff;*.dat;*.lut;*.fl7;flamesensordata.*;sample.*;siemensstar.*')
 QueryDelete(0,'.', 'tape7-*.txt;tape7-*;arr*.txt;Traje*.txt;trian*.txt;vertex*.txt;Intensity-max.*;test.txt;')
-QueryDelete(0,'.', 'arrfile*.*;colourcoordinates.*;tar;tropical-23krural-45deg-space.*;testwith.svg;*.tex;' )
+QueryDelete(0,'.', 'arrfile*.*;colourcoordinates.*;tar;tropical-23krural-45deg-space.*;testwith.svg;*.bib;' )
 QueryDelete(0,'.', 'modtrandata.tar;modtrandata.tgz;tape7VISNIR5kmTrop23Vis;arrayplot*.*;savegraph.svg' )
-QueryDelete(0,'.', 'arrayplotdemo.*;*.tex;img2*.*;sensornoise.*;Colored_Bullseye-wikipedia.*;binfile.bin;' )
+QueryDelete(0,'.', 'arrayplotdemo.*;img2*.*;sensornoise.*;Colored_Bullseye-wikipedia.*;binfile.bin;' )
 QueryDelete(0,'.', 'lwir100mm0150us*.*;LWIR-BBre*.*;img2*.*;pyradiSample*.*;lw*.txt;lw*.xml;Unity.txt' )
-QueryDelete(1,'.', '*.ps')
-QueryDelete(1,'.', '*.log')
-QueryDelete(1,'.', '*.bbl;comment.cut')
-QueryDelete(1,'.', '*.bbl;*.sav;*.bak;*.synctex;*.log;*.svn')
-QueryDelete(1,'.', '*.blg;*.dfn;*.smb;*.bak;*.aux;*.out;*.lot;*.lof;*.toc;*.tex.bak;*.dvi;*.efc;Backup_of_*.*;*.abr')
+QueryDelete(0,'.', '*.ps')
+QueryDelete(0,'.', 'missLUT-2000-e.*;path1kmflamesensor.txt;pathspaceflamesensor.txt')
+QueryDelete(0,'.', 'sampleReflectance.txt;samplesVis.txt;LowPressureSodiumLamp.txt;detectorflamesensor.txt;fluorescent.txt;ciexyz31_1.txt')
+QueryDelete(0,'.', '*.log')
+QueryDelete(0,'.', '*.bbl;comment.cut')
+QueryDelete(0,'.', '*.bbl;*.sav;*.bak;*.synctex;*.log;*.svn')
+QueryDelete(0,'.', '*.blg;*.dfn;*.smb;*.bak;*.aux;*.out;*.lot;*.lof;*.toc;*.tex.bak;*.dvi;*.efc;Backup_of_*.*;*.abr')
 
 
 

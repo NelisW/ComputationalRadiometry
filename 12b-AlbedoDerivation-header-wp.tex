@@ -1,0 +1,127 @@
+\documentclass[english]{workpackage}[1996/06/02]
+
+%%%%%%%%%%%%% GRAPHICS PACKAGES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ifpdf        %This text is produced when in pdfTeX mode.
+\usepackage[pdftex]{graphicx}
+\usepackage{epstopdf}
+\else  %  This text is produced when  in DVI mode,
+\usepackage[dvips]{graphics}
+\usepackage[dvips]{graphicx}
+\fi
+
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{textcomp} % additional fonts, required for upquote in listings and \textmu
+\usepackage{placeins} % FloatBarrier
+\usepackage{url} % for websites
+\usepackage[detect-weight]{siunitx} % nice! SI units and print numbers
+\usepackage{afterpage} % afterpage{\clearpage}
+\usepackage{gensymb} % get the degree symbol as in \celcius
+\usepackage{amsmath} 
+\usepackage[printonlyused]{acronym}
+\usepackage{lastpage}
+
+%the following is required for carriage return symbol
+%ftp://ftp.botik.ru/rented/znamensk/CTAN/fonts/mathabx/texinputs/mathabx.dcl
+%https://secure.kitserve.org.uk/content/mathabx-font-symbol-redefinition-clash-latex
+\DeclareFontFamily{U}{mathb}{\hyphenchar\font45}
+\DeclareFontShape{U}{mathb}{m}{n}{
+      <5> <6> <7> <8> <9> <10> gen * mathb
+      <10.95> mathb10 <12> <14.4> <17.28> <20.74> <24.88> mathb12
+      }{}
+\DeclareSymbolFont{mathb}{U}{mathb}{m}{n}
+\DeclareMathSymbol{\dlsh}{3}{mathb}{"EA}
+
+\usepackage[T1]{fontenc}
+
+\definecolor{LightGrey}{rgb}{0.95,0.95,0.95}
+\definecolor{LightRed}{rgb}{1.0,0.9,0.9}
+
+\lstset{ %
+upquote=true, % gives the upquote instead of the curly quote
+basicstyle=\ttfamily\footnotesize,       % the size of the fonts that are used for the code
+numbers=none,                   % where to put the line-numbers
+showspaces=false,               % show spaces adding particular underscores
+showstringspaces=false,         % underline spaces within strings
+showtabs=false,                 % show tabs within strings adding particular underscores
+frame=lines,                   % adds a frame around the code
+tabsize=4,              % sets default tabsize to 2 spaces
+captionpos=b,                   % sets the caption-position to bottom
+framesep=1pt,
+xleftmargin=0pt,
+xrightmargin=0pt,
+ captionpos=t,                    % sets the caption-position to top
+%deletekeywords={...},            % if you want to delete keywords from the given language
+%escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+%escapeinside={\%}{)},          % if you want to add a comment within your code
+breaklines=true,        % sets automatic line breaking
+breakatwhitespace=false,    % sets if automatic breaks should only happen at whitespace
+prebreak=\raisebox{0ex}[0ex][0ex]{$\dlsh$} % add linebreak symbol
+}
+
+
+\lstdefinestyle{incellstyle}{
+  backgroundcolor=\color{LightGrey},  % choose the background color,  add \usepackage{color}
+  language=Python,
+}
+
+\lstdefinestyle{outcellstyle}{
+  backgroundcolor=\color{LightRed},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+}
+
+\setlength{\parindent}{0.0mm}
+\setlength{\parskip}{6pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\WPdocmaxpage{\pageref{LastPage}}
+
+\WPproject{}
+\WPdocnumber{}
+\WPclassification{}
+\WPequipment{}
+\WPsubject{Analysis of MODIS data for Rietvlei Area}
+\WPdistribution{
+\vspace{0.1mm}
+\begin{tabular}{lllll}
+ &  &  &  & \\
+\end{tabular}
+}
+
+\WPconclusions{
+This Work Package describes the analysis process and the results obtained when analysing MODIS data for a small sample in the Rietvleidam Nature Reserve.
+The purpose with this investigation was to determine the spectral albedo and land surface temperature of the site.  
+}
+
+\WPdocauthor{CJ Willers}
+\WPprevpackdate{}
+\WPprevpacknumber{}
+\WPsuperpackdate{}
+\WPsuperpacknumber{}
+\WPcurrentpackdate{\today}
+\WPcurrentpacknumber{}
+\WPdocECPnumber{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% this lot is aimed at the client
+% the following is printed on the front page if the following is true
+%
+\WPdocontractdetails{false}
+%
+\WPcontractname{Relevant contract name}  % name of the contract
+\WPorderno{xxxxxxxx}         %  order number
+\WPmilestonenumber{???}   % 
+\WPmilestonetitle{???}
+\WPcontractline{??}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\WPlayout
+\tableofcontents
+\listoffigures
+\listoftables
+
+

@@ -1,2 +1,4 @@
 *.html
 .dropbox
+.ipynb_checkpoints
+desktop.ini

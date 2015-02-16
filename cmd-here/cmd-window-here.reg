@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+;Right click on folder and open up command window
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shell\cmd1]
+@="Open &Command Prompt Here"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shell\cmd1\command]
+@="cmd.exe /k pushd \"%L\""
+
+
+;Right click on any file and open up command window
+[HKEY_CLASSES_ROOT\*\shell\cmd1]
+@="Open &Command Prompt Here"
+
+[HKEY_CLASSES_ROOT\*\shell\cmd1\command]
+@="cmd.exe %1"

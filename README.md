@@ -2,13 +2,13 @@
 
 [![http://dx.doi.org/10.5281/zenodo.9910 ](https://zenodo.org/badge/doi/10.5281/zenodo.9910.png)](http://dx.doi.org/10.5281/zenodo.9910 )
 
-The [pyradi](https://code.google.com/p/pyradi/) toolkit is a Python toolkit to perform optical and infrared radiometry (flux flow) calculations. The toolkit is an extendable, integrated and coherent collection of basic functions, code modules, documentation, example templates, unit tests and resources, that can be applied towards diverse calculations in the electro-optics domain. 
+The [pyradi](https://github.com/NelisW/pyradi) toolkit is a Python toolkit to perform optical and infrared radiometry (flux flow) calculations. The toolkit is an extendable, integrated and coherent collection of basic functions, code modules, documentation, example templates, unit tests and resources, that can be applied towards diverse calculations in the electro-optics domain. 
 
-The notebooks in this series cover the functionality provided by the [pyradi](https://code.google.com/p/pyradi/) Python library on [Google Code](https://code.google.com/p/pyradi/source/browse/#svn%2Ftrunk%253Fstate%253Dclosed).   The pyradi package is also available on [PyPI](https://pypi.python.org/pypi/pyradi/):  `pip install --upgrade pyradi`.
+The notebooks in this series cover the functionality provided by the [pyradi](https://github.com/NelisW/pyradi) Python library.   The pyradi package is also available on [PyPI](https://pypi.python.org/pypi/pyradi/):  `pip install --upgrade pyradi`.
 
 The notebooks can be downloaded from [Github](https://github.com/NelisW/ComputationalRadiometry#computational-optical-radiometry-with-pyradi). These notebooks are constantly revised and updated, revisit from time to time.
 
-This series of  notebooks is not intended to be a complete manual, please consult the [references](https://code.google.com/p/pyradi/#Documentation) for more information. Section references in the notebooks indicated as (Sec 5.1) refer to sections in the [book](http://spie.org/x648.html?product_id=2021423&origin_id=x646).
+This series of  notebooks is not intended to be a complete manual, please consult the [documentation](http://nelisw.github.io/pyradi-docs/_build/html/index.html) for more information. Section references in the notebooks indicated as (Sec 5.1) refer to sections in the [book](http://spie.org/x648.html?product_id=2021423&origin_id=x646).
 
 The links below point to HTML renderings of the notebooks, courtesy of [Rackspace](http://nbviewer.ipython.org/). Please have patience, rendering the notebooks may take some time (downloading files, processing the data, and rendering the HTML).
 
@@ -27,7 +27,7 @@ A very brief overview of the fundamental theory, from the [book](http://spie.org
 This notebook provides a description of the basics of radiometric spectral variables and conversions between spectral densities, generic filter functions, generic detector functions, and reading and plotting spectral data. It then moves on to how to calculate spectral integrals, calculate spectral effective values, spectral convolution, colour coordinate calculations, and spatial integrals.
 
 05) Plotting with pyradi.  
-Demonstrating the variety of plots available with ryplot. The pyradi library has a module, [`pyradi.ryplot`](http://pyradi.googlecode.com/svn//trunk/pyradi/doc/_build/html/ryplot.html),
+Demonstrating the variety of plots available with ryplot. The pyradi library has a module, [`pyradi.ryplot`](http://nelisw.github.io/pyradi-docs/_build/html/ryplot.html),
 to simplify plotting. The module is a productivity wrapper around [Matplotlib](http://matplotlib.org/), all that can can be done `pyradi.ryplot` can be done with raw Matplotlib.  The productivity gained with this module stems from the fact that plots and plot properties are all combined into a single function call. So, with just one call a complete graph can be drawn. The code is compact and there is no need to hunt through many pages of documentation to find the appropriate command for some graph attribute. You would have to consult the ryplot documentation for information on the functions long list of parameters.
 
 05a) [Plotting With Pyradi - General Introduction and Cartesian Plots](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/05a-PlottingWithPyradi-GeneralAndCartesian.ipynb?create=1) 
@@ -42,13 +42,13 @@ This notebook covers extends on 05a) and describes polar plots, three-dimensiona
 Demonstrate the pulse detection algorithms (ryutils). Demonstrate the range equation solver (ryutils). Absolute humidity function (ryutils). List files in directory tree using a pattern: listFiles (ryfiles). Write LateX code for eps figure: epsLaTexFigure (ryfiles). Write a numpy array to LaTeX: arrayToLaTex (ryfiles). Load a two-dimensional lookup table: read2DLookupTable (ryfiles).
  
 07) [Optical Sources](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/07-Optical%20Sources.ipynb?create=1).  
-The pyradi library has a reasonably complete collection of Planck radiator models, both spectral and wide band. A comprehensive collection of physical constants, pertinent to optical radiation is also included.  This notebook introduces these functions in the [`pyradi.ryplanck`](http://pyradi.googlecode.com/svn//trunk/pyradi/doc/_build/html/ryplanck.html#pyradi.ryplanck) library.
+The pyradi library has a reasonably complete collection of Planck radiator models, both spectral and wide band. A comprehensive collection of physical constants, pertinent to optical radiation is also included.  This notebook introduces these functions in the [`pyradi.ryplanck`](http://nelisw.github.io/pyradi-docs/_build/html/ryplanck.html) library.
 
 08) [Modtran File Processing](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/08-ModtranFileProcessing.ipynb?create=1).  
-The pyradi library has a module to handle Modtran files.  The module currently has only one function: to read Modtran tape7 files in an intelligent manner.  The function is [`rymodtran.loadtape7`](http://pyradi.googlecode.com/svn//trunk/pyradi/doc/_build/html/rymodtran.html#pyradi.rymodtran.loadtape7).
+The pyradi library has a module to handle Modtran files.  The module currently has only one function: to read Modtran tape7 files in an intelligent manner.  The function is [`rymodtran.loadtape7`](http://nelisw.github.io/pyradi-docs/_build/html/rymodtran.html).
 
 09) [Optical Detector Modelling](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/09-DetectorModelling.ipynb?create=1).  
-The pyradi [`rydetector`](http://pyradi.googlecode.com/svn//trunk/pyradi/doc/_build/html/rydetector.html) module models the primary functionality of optical detectors.  This notebook demonstrates the development of a simple single element InSb detector model suitable for high-level system modelling.  The performance of the detector is described in terms of its figures of merit. The theoretical background to this model is covered the text book.  
+The pyradi [`rydetector`](http://nelisw.github.io/pyradi-docs/_build/html/rydetector.html) module models the primary functionality of optical detectors.  This notebook demonstrates the development of a simple single element InSb detector model suitable for high-level system modelling.  The performance of the detector is described in terms of its figures of merit. The theoretical background to this model is covered the text book.  
 
 10) [Image utilities](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/10-ImageUtilities.ipynb?create=1).
 Loading raw  data files and saving raw data to an image.  Performing histogram equalisation on an image. Warping a Siemens Star image from polar to cartesian format. Calculate the three dimensional noise of an image sequence.  

@@ -1,8 +1,8 @@
 ### Computational Optical Radiometry with pyradi   
 
-[![http://dx.doi.org/10.5281/zenodo.9910 ](https://zenodo.org/badge/doi/10.5281/zenodo.9910.png)](http://dx.doi.org/10.5281/zenodo.9910 )
 
-The [pyradi](https://github.com/NelisW/pyradi) toolkit is a Python toolkit to perform optical and infrared radiometry (flux flow) calculations. The toolkit is an extendable, integrated and coherent collection of basic functions, code modules, documentation, example templates, unit tests and resources, that can be applied towards diverse calculations in the electro-optics domain. 
+
+The [pyradi](https://github.com/NelisW/pyradi) toolkit is a Python toolkit to perform optical and infrared radiometry (flux flow) calculations. The toolkit is an extendible, integrated and coherent collection of basic functions, code modules, documentation, example templates, unit tests and resources, that can be applied towards diverse calculations in the electro-optics domain. 
 
 The notebooks in this series cover the functionality provided by the [pyradi](https://github.com/NelisW/pyradi) Python library.   The pyradi package is also available on [PyPI](https://pypi.python.org/pypi/pyradi/):  `pip install --upgrade pyradi`.
 
@@ -31,7 +31,7 @@ Demonstrating the variety of plots available with ryplot. The pyradi library has
 to simplify plotting. The module is a productivity wrapper around [Matplotlib](http://matplotlib.org/), all that can can be done `pyradi.ryplot` can be done with raw Matplotlib.  The productivity gained with this module stems from the fact that plots and plot properties are all combined into a single function call. So, with just one call a complete graph can be drawn. The code is compact and there is no need to hunt through many pages of documentation to find the appropriate command for some graph attribute. You would have to consult the ryplot documentation for information on the functions long list of parameters.
 
 05a) [Plotting With Pyradi - General Introduction and Cartesian Plots](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/05a-PlottingWithPyradi-GeneralAndCartesian.ipynb?create=1) 
-This notebook covers a general introduction to plotting and creating cartesian (x,y) plots. Other plot types are covered in the next notebook in the series.  
+This notebook covers a general introduction to plotting and creating Cartesian (x,y) plots. Other plot types are covered in the next notebook in the series.  
 
 05b) [Polar, three-dimensional, and image plots](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/05b-PlottingWithPyradi-Polar-and-3D.ipynb?create=1)
 This notebook covers extends on 05a) and describes polar plots, three-dimensional plots and image plots.  Other plot types are covered in the next notebook in the series.  
@@ -65,3 +65,8 @@ This notebook provides a simple worked example of a small sensor observing a fla
 12b) [Albedo derivation from MODIS data](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/12b-AlbedoDerivation.ipynb?create=1).  
 This notebook demonstrates the use of Pandas to extract information from MODIS data.  The objective here is to determine the spectral albedo of an area in the visual and infrared spectral bands.  The data acquisition is done manually and this notebook focuses only on the analysis.  The MODIS data provide information in the visual, near infrared and thermal infrared bands, but with a gap from 3 $\mu$m to 10 $\mu$m - you have to consult other sources for this information. The albedo calculated here is based on a multi-year dataset of a single site;  over a 7 km by 7 km region at the test site. The albedo is averaged over all the years for the twelve months of the year.
 
+12c) [Atmospheric transmittance effect on colour coordinates of sunlit objects.](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/12c-AtmosphericEffectColourCoords?create=1). 
+The perceived colour of an object depends on the object's inherent colour as well as the irradiance spectrum. The spectral properties of the three irradiance components on an object at sea level vary dramatically with solar zenith angle. When the sun is at zero zenith angle the sunlight is least attenuated (spectral variation is smaller), and the spectral properties of sky shine is similar to the direct sun irradiance. When the sun is near the horizon the direct sun irradiance shifts towards red, while the sky radiance shifts towards blue. This notebook uses Modtran-calculated atmospheric spectral transmittance for different atmospheric aerosol conditions and zenith angles.  The shift in colour coordinates of a few coloured surfaces are then determined for the different atmospheric conditions.
+ 
+12d) [Temperature estimation from spectral data.](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/12d-SpectralTemperatureEstimation.ipynb?create=1).  
+A spectral radiometer is used to determine the surface temperature of a hot object exposed to sunlight.  The surface normal vector is pointing directly towards the sun.  The object is considerably hotter than the environment, hence atmospheric path radiance and reflected ambient flux can be ignored. Ignore atmospheric transmittance  between the sun and the object and between the object and the sensor.  The measurement results are corrupted by noise.  The sun and object both radiate as Planck radiators. Emissivity is constant at all wavelengths.  The temperature and emissivity of the object surface, as well as the temperature of the sun are unknown and are determined. 

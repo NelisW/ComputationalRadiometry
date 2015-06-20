@@ -50,6 +50,9 @@ The pyradi library has a module to handle Modtran files.  The module currently h
 09) [Optical Detector Modelling](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/09-DetectorModelling.ipynb?create=1).  
 The pyradi [`rydetector`](http://nelisw.github.io/pyradi-docs/_build/html/rydetector.html) module models the primary functionality of optical detectors.  This notebook demonstrates the development of a simple single element InSb detector model suitable for high-level system modelling.  The performance of the detector is described in terms of its figures of merit. The theoretical background to this model is covered the text book.  
 
+09b) [Staring Array Detector Modelling](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/09b-StaringArrayDetectors.ipynb?create=1).  
+The pyradi [`rystare`](http://nelisw.github.io/pyradi-docs/_build/html/rystare.html) module models a high level model for CCD and CMOS staring array signal chain modelling.  The model accepts an input image in photon rate irradiance units and then proceeds to calculate the various noise components and signal components along the signal flow chain.
+
 10) [Image utilities](http://nbviewer.ipython.org/urls/raw.githubusercontent.com/NelisW/ComputationalRadiometry/master/10-ImageUtilities.ipynb?create=1).
 Loading raw  data files and saving raw data to an image.  Performing histogram equalisation on an image. Warping a Siemens Star image from polar to cartesian format. Calculate the three dimensional noise of an image sequence.  
         

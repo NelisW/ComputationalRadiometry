@@ -2,3 +2,9 @@
 .dropbox
 .ipynb_checkpoints
 desktop.ini
+/*.aux
+/*.bib
+/*.synctex
+/*.log
+/pic/*.png
+

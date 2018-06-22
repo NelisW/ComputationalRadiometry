@@ -89,6 +89,7 @@ QueryDelete(0,'.', '*.log')
 QueryDelete(0,'.', '*.bbl;comment.cut')
 QueryDelete(0,'.', '*.bbl;*.sav;*.bak;*.synctex;*.log;*.svn')
 QueryDelete(0,'.', '*.blg;*.dfn;*.smb;*.bak;*.aux;*.out;*.lot;*.lof;*.toc;*.tex.bak;*.dvi;*.efc;Backup_of_*.*;*.abr')
+QueryDelete(0,'.', 'PAOutput.txt')
 
 
 

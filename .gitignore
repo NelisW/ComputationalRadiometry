@@ -6,6 +6,8 @@ desktop.ini
 /*.bib
 /*.synctex
 /*.log
+/*.bbl
+/*.blg
 /pic/*.png
 
 /*.tex
@@ -139,3 +141,12 @@ bunsenspec.txt
 /pic/Backup_of_12K pictures.cdr
 /pic/Backup_of_12Kpictures.cdr
 /x.pdf
+/Siemens_Star-unfolded.png
+/pltpdfpages.pdf
+/pic/03-Introduction-to-Radiometry_6_0.jpeg
+/pic/03-Introduction-to-Radiometry_7_0.jpeg
+/atmosphere2.pdf
+/img20.png
+/img21.png
+/img22.png
+/jet-turbo.png

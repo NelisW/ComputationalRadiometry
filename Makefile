@@ -1,4 +1,4 @@
-TARGET=08-ModtranFileProcessing
+TARGET=09b-StaringArrayDetectors
 PDFVIEWER=
 AFTERALL=postprocessing
 BEFOREALL=preprocessing

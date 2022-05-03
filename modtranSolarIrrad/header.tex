@@ -1,0 +1,108 @@
+% the first cell of the notebook must be a RawNBConvert cell with the following contents:
+%
+%%%\documentclass that you want to use
+%%%\input{header.tex}
+%%%whatever preamble lines you require
+%%%\begin{document}
+%%%whatever extra info before the notebook follows
+%%%\end{document} % is added by the converter.
+%
+%The header.tex file provides the functionality required by the converter-created code. 
+%This content is input using the \LaTeX{} input command.
+%
+%
+% - The exporter extracts the document class line from the first cell of the notebook.
+% - Then follows the contents of this file (as preamble)
+% - Then follows the rest of the first cell of the notebook (rest of preamble, begin doc, etc)
+% - Finally the rest of the notebook is exported.
+%
+
+
+\usepackage{ragged2e}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp} % additional fonts, required for upquote in listings and \textmu
+\usepackage{placeins} % FloatBarrier
+\usepackage{url} % for websites
+\usepackage[detect-weight,detect-mode]{siunitx} % nice! SI units and print numbers
+\usepackage{afterpage} % afterpage{\clearpage}
+\usepackage{gensymb} % get the degree symbol as in \celcius
+\usepackage{amsmath} 
+\usepackage{commath} 
+\usepackage[printonlyused]{acronym}
+\usepackage{lastpage}
+\usepackage{longtable}
+\usepackage[utopia]{mathdesign}
+\usepackage[OMLmathrm,OMLmathbf]{isomath}
+\usepackage{booktabs}
+
+% to get upright math symbols.
+\newcommand\ct[1]{\text{\rmfamily\upshape #1}}
+
+%the following is required for carriage return symbol
+%ftp://ftp.botik.ru/rented/znamensk/CTAN/fonts/mathabx/texinputs/mathabx.dcl
+%https://secure.kitserve.org.uk/content/mathabx-font-symbol-redefinition-clash-latex
+\DeclareFontFamily{U}{mathb}{\hyphenchar\font45}
+\DeclareFontShape{U}{mathb}{m}{n}{
+      <5> <6> <7> <8> <9> <10> gen * mathb
+      <10.95> mathb10 <12> <14.4> <17.28> <20.74> <24.88> mathb12
+      }{}
+\DeclareSymbolFont{mathb}{U}{mathb}{m}{n}
+\DeclareMathSymbol{\dlsh}{3}{mathb}{"EA}
+
+
+%enable smart resizing: large images are resized down but small images are left as they are
+\usepackage[Export]{adjustbox}
+\adjustboxset{max size={\textwidth}{0.7\textheight}}
+
+
+\definecolor{LightGrey}{rgb}{0.95,0.95,0.95}
+\definecolor{LightRed}{rgb}{1.0,0.9,0.9}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+% syntax highlight https://www.overleaf.com/latex/examples/syntax-highlighting-in-latex-with-the-listings-package/jxnppmxxvsvk#.WKwPq3pp5_Y
+\lstset{ %
+backgroundcolor=\color{white},   % choose the background color
+commentstyle=\color{mygreen},    % comment style
+keywordstyle=\color{blue},       % keyword style
+stringstyle=\color{mymauve},     % string literal style
+upquote=true, % gives the upquote instead of the curly quote
+basicstyle=\ttfamily\footnotesize,       % the size of the fonts that are used for the code
+numbers=none,                   % where to put the line-numbers
+showspaces=false,               % show spaces adding particular underscores
+showstringspaces=false,         % underline spaces within strings
+showtabs=false,                 % show tabs within strings adding particular underscores
+frame=lines,                   % adds a frame around the code
+tabsize=4,              % sets default tabsize to 2 spaces
+captionpos=b,                   % sets the caption-position to bottom
+framesep=1pt,
+xleftmargin=0pt,
+xrightmargin=0pt,
+ captionpos=t,                    % sets the caption-position to top
+%deletekeywords={...},            % if you want to delete keywords from the given language
+%escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+%escapeinside={\%}{)},          % if you want to add a comment within your code
+breaklines=true,        % sets automatic line breaking
+breakatwhitespace=false,    % sets if automatic breaks should only happen at whitespace
+prebreak=\raisebox{0ex}[0ex][0ex]{$\dlsh$} % add linebreak symbol
+}
+
+\lstdefinestyle{incellstyle}{
+  backgroundcolor=\color{LightGrey},  % choose the background color,  add \usepackage{color}
+  language=Python,
+}
+
+\lstdefinestyle{outcellstyle}{
+  backgroundcolor=\color{LightRed},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+}
+
+\usepackage[a4paper, margin=0.75in]{geometry}
+\newlength{\textwidthm}
+\setlength{\textwidthm}{\textwidth}
+
+
+

@@ -921,3 +921,4 @@ https://www.nrel.gov/grid/solar-resource/spectra-wehrli.html
     6615.0     0.001  1.365E+3
     7785.0     0.001  1.366E+3
    10075.0     0.000  1.367E+3
+   12075.0     0.000  1.367E+3

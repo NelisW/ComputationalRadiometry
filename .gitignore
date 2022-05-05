@@ -157,3 +157,7 @@ revision.tex
 /modtranSolarIrrad/modtrantape7.bib
 /modtranSolarIrrad/pic/modtrantape7*.png
 
+/modtranSolarIrrad/data/low/*.ontplt
+*.ontplt
+*.bbl
+*.blg

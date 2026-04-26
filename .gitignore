@@ -161,3 +161,4 @@ revision.tex
 *.ontplt
 *.bbl
 *.blg
+.opencode

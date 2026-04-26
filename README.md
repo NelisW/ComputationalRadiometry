@@ -15,7 +15,7 @@ The URLs in the notebooks were not updated to 2026 status, that will follow late
 
 The [pyradi](https://github.com/NelisW/pyradi) toolkit is a Python toolkit to perform optical and infrared radiometry (flux flow) calculations. The toolkit is an extendible, integrated and coherent collection of basic functions, code modules, documentation, example templates, unit tests and resources, that can be applied towards diverse calculations in the electro-optics domain. 
 
-The notebooks in this series cover the functionality provided by the [pyradi](https://github.com/NelisW/pyradi) Python library.   The pyradi package is also available on [PyPI](https://pypi.python.org/pypi/pyradi/):  `pip install --upgrade pyradi`.
+The notebooks in this series cover the functionality provided by the [pyradi](https://github.com/NelisW/pyradi) Python library.   
 
 The notebooks can be downloaded from [Github](https://github.com/NelisW/ComputationalRadiometry#computational-optical-radiometry-with-pyradi). These notebooks are constantly revised and updated, revisit from time to time.
 

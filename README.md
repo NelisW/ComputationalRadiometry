@@ -1,6 +1,17 @@
 ### Computational Optical Radiometry with pyradi   
 
-[![http://dx.doi.org/10.5281/zenodo.9910 ](https://zenodo.org/badge/doi/10.5281/zenodo.9910.png)](http://dx.doi.org/10.5281/zenodo.9910 )
+# Status
+
+Portions of pyradi and the notebooks in this repo are older than 20 years.
+The [pyradi](https://github.com/NelisW/pyradi) library was extensively reworked for modern **Python 3.12+**, and the notebooks were updated to reflect the changes in the library. 
+
+The 2026-04 commit is current with the 2026-04 version of pyradi.  All notebooks, except 12h-MWIR-Well-fill.ipynb works.
+
+The URLs in the notebooks were not updated to 2026 status, that will follow later.
+
+# Overview
+
+
 
 The [pyradi](https://github.com/NelisW/pyradi) toolkit is a Python toolkit to perform optical and infrared radiometry (flux flow) calculations. The toolkit is an extendible, integrated and coherent collection of basic functions, code modules, documentation, example templates, unit tests and resources, that can be applied towards diverse calculations in the electro-optics domain. 
 
